@@ -1,0 +1,8 @@
+segment,customers,avg_recency,avg_monetary,total_revenue,revenue_share_%
+At Risk (High Value),14462,394.2,278.7,4030382.6,30.5
+Average,11162,220.4,55.4,618439.0,4.7
+Big Spenders,6943,220.6,249.4,1731443.6,13.1
+Champions,14517,91.9,267.1,3877101.2,29.3
+Lost,22752,395.5,56.0,1273118.8,9.6
+Loyal,1813,132.0,267.4,484852.5,3.7
+Recent,21701,89.8,55.5,1204911.2,9.1

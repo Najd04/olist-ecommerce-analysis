@@ -1,4 +1,5 @@
-﻿pandas
+pandas
 matplotlib
 seaborn
 jupyter
+streamlit
