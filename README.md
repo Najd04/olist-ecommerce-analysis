@@ -2,6 +2,8 @@
 
 An end-to-end analysis of ~100K real orders from [Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce), a Brazilian online marketplace (2016–2018). The goal is not just to chart the data, but to answer business questions and turn the answers into recommendations.
 
+**Live dashboard:** [najd04-olist-analysis.streamlit.app](https://najd04-olist-analysis.streamlit.app)
+
 ## Key Findings
 
 1. **Late delivery is strongly linked to bad reviews.** Late orders averaged **2.57** stars vs **4.29** for on-time orders. The share of 1-star reviews jumped from **6.6% to 46.2%**.
@@ -98,7 +100,7 @@ olist-ecommerce-analysis/
 │   ├── 01_cleaning.ipynb          # cleaning, delivery vs reviews, state analysis
 │   ├── 03_rfm.ipynb               # RFM segmentation
 │   └── 05_cohort_retention.ipynb  # cohort retention
-├── app/               # Streamlit dashboard (coming soon)
+├── app/               # Streamlit dashboard (app.py + light data files)
 ├── images/            # charts used in this README
 ├── requirements.txt
 └── README.md
@@ -112,11 +114,17 @@ olist-ecommerce-analysis/
    ```
 2. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) and put the CSV files in `data/`.
 3. Run the notebooks in order: `01_cleaning` first (it creates `data/clean_orders.csv`), then `03_rfm` and `05_cohort_retention`.
+4. To run the dashboard locally (it uses the light data files already inside `app/`):
+   ```bash
+   streamlit run app/app.py
+   ```
 
 ## Tools
 
-Python, Pandas, Matplotlib, Seaborn, Jupyter Notebook
+Python, Pandas, Matplotlib, Seaborn, Jupyter Notebook, Streamlit
 
 ## Dashboard
 
-Coming soon (Streamlit).
+An interactive Streamlit dashboard with filters by date and state, KPIs, delivery vs review analysis, state comparison and RFM segments:
+
+**[Open the live dashboard](https://najd04-olist-analysis.streamlit.app)**
